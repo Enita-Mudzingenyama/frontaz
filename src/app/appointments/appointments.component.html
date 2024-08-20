@@ -1,0 +1,68 @@
+<!-- appointment.component.html -->
+<body>
+  <div class="appointment-container">
+    <h2>Book an Appointment</h2>
+  
+    
+      <form >
+      <div class="form-group">
+        <label for="name">First_name:</label>
+        <input type="text" id="name" formControlName="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">last_name:</label>
+        <input type="text" id="name" formControlName="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" formControlName="age" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">gender:</label>
+        <input type="text" id="name" formControlName="name" required>
+      </div>
+      
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" formControlName="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" formControlName="location" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">doctor_requested:</label>
+        <input type="text" id="name" formControlName="name" required>
+      </div>
+      
+  
+      <div class="form-group">
+        <label for="date">appointment_date:</label>
+        <input type="date" id="date" formControlName="date" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="time">appointment_time:</label>
+        <input type="time" id="time" formControlName="time" required>
+      </div>
+  
+      <button type="submit" [disabled]="!appointmentForm.valid">Book Appointment</button>
+    </form>
+  
+    <div *ngIf="showSuccessMessage" class="success-message">
+      <p>Appointment booked successfully!</p>
+    </div>
+  </div>
+
+</body>

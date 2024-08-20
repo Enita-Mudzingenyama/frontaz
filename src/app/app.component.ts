@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ReactiveFormsModule } from '@angular/forms';
+//import { AppointmentComponent } from './appointments/appointments.component'; 
 @Component({
   selector: 'app-root',
   standalone: true,
